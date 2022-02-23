@@ -24,7 +24,7 @@ userGenerator.addEventListener('click', function(){
         document.getElementById('my-ticket-price').innerHTML += `${ticketPrice} €`;
         document.getElementById('my-age').innerHTML += `minore di 18 anni`;
     } else if( userSelector.value == '2'){
-        userDiscount = 0.38;
+        userDiscount = 0.33;
         ticketPrice = (ticketPrice - (ticketPrice * userDiscount)).toFixed(2);
         console.log('vecchi');
         console.log(ticketPrice);
