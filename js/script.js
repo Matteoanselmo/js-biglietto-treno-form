@@ -32,7 +32,7 @@ userGenerator.addEventListener('click', function(){
         document.getElementById('my-age').innerHTML += `over 65 anni`;
     } else{
         userDiscount = 1;
-        ticketPrice = (ticketPrice - (ticketPrice * userDiscount)).toFixed(2);
+        ticketPrice = (ticketPrice).toFixed(2);
         console.log('normali');
         console.log(ticketPrice);
         document.getElementById('my-ticket-price').innerHTML += `${ticketPrice} €`;
@@ -40,5 +40,11 @@ userGenerator.addEventListener('click', function(){
     };
 });
 
-
+const userCancel = document.getElementById('my-btn-cancel');
+userCancel.addEventListener('click' , function(){
+    document.getElementById('my-form').reset();
+    document.getElementById('my-age').innerHTML = `età:`;
+    document.getElementById('my-ticket-price').innerHTML = `prezzo biglietto:`;
+    
+});
 
