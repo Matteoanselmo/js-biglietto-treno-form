@@ -10,7 +10,58 @@
 </head>
 <body>
     <main>
-        
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h1 class="text-white text-uppercase">
+                        calcola il prezzo del tuo biglietto
+                    </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center bg-white">
+                <div class="col-12 mb-3">
+                    <div class="row p-3">
+                        <div class="col-4 d-flex flex-column text-center">
+                            <label class="mb-2 my-magenta-color">Nome e Cognome</label>
+                            <input type="text" name="" id="my-input-name" class="my-input-text">
+                        </div>
+                        <div class="col-4 d-flex flex-column text-center">
+                            <label class="mb-2 my-magenta-color">Km da percorrere</label>
+                            <input type="text" name="" id="my-input-km" class="my-input-text">
+                        </div>
+                        <div class="col-4 d-flex flex-column text-center">
+                            <label class="mb-2 my-magenta-color">Fascia d'età</label>
+                            <select id="my-select" size="3">
+                                <option value="0">Minorenne</option>
+                                <option value="1">Tra i 19 e i 64 anni</option>
+                                <option value="2">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mb-3">
+                    <button class="btn btn-light my-magenta-color border-warning mx-2" id="my-btn-generator">Genera</button>
+                    <button class="btn btn-light my-magenta-color mx-2">Annulla</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-white text-uppercase">
+                        il tuo biglietto
+                    </h1>
+                </div>
+            <div class="row bg-white gx-0 p-4">
+                <div class="col-12">
+                    <h3 class="text-uppercase">dettaglio passeggeri</h3>
+                </div>
+                <div class="col-12">
+                    <p id="my-age">età: </p>
+                    <p id="my-ticket-price">prezzo biglietto </p>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="js/script.js"></script>
 </body>

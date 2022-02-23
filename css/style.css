@@ -1,0 +1,21 @@
+main{
+    background-color: rgb(185, 20, 80);
+}
+
+select{
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: rgb(185, 20, 80);
+}
+
+.my-magenta-color{
+    color: rgb(185, 20, 80);
+}
+
+.my-input-text{
+    border-color: rgb(185, 20, 80);
+    border-radius: 5px;
+}
+.row{
+    border-radius: 10px;
+}
