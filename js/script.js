@@ -4,7 +4,7 @@
 const userName = document.getElementById('my-input-name');
 const userKm = document.getElementById('my-input-km');
 
-/*Gli stampo su console*/
+/*creo la costante del selector per iniziare il ciclo per calcolare il prezzo e lo sconto*/
 
 const userSelector = document.getElementById('my-select');
 let userDiscount;
@@ -39,6 +39,8 @@ userGenerator.addEventListener('click', function(){
         document.getElementById('my-age').innerHTML += `compresa trai 18 e 64 anni`;
     };
 });
+
+//assegno ad una costante il valore del button annulla e creo un ascoltatore per resettare tutto
 
 const userCancel = document.getElementById('my-btn-cancel');
 userCancel.addEventListener('click' , function(){
