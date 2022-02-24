@@ -43,8 +43,7 @@ userGenerator.addEventListener('click', function(){
 const userCancel = document.getElementById('my-btn-cancel');
 userCancel.addEventListener('click' , function(){
     document.getElementById('my-form').reset();
-    document.getElementById('my-age').innerHTML = `età:`;
-    document.getElementById('my-ticket-price').innerHTML = `prezzo biglietto:`;
-    
+    document.getElementById('my-age').innerHTML = `età: `;
+    document.getElementById('my-ticket-price').innerHTML = `prezzo biglietto: `;
 });
 
