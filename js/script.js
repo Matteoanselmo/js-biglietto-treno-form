@@ -39,6 +39,7 @@ userGenerator.addEventListener('click', function(){
         document.getElementById('my-age').innerHTML += `compresa trai 18 e 64 anni`;
     };
     document.getElementById('output').classList.remove('d-none');
+    document.getElementById('my-name').innerHTML += `${userName.value}`;
 });
 
 //assegno ad una costante il valore del button annulla e creo un ascoltatore per resettare tutto
@@ -46,6 +47,7 @@ userGenerator.addEventListener('click', function(){
 const userCancel = document.getElementById('my-btn-cancel');
 userCancel.addEventListener('click' , function(){
     document.getElementById('my-form').reset();
+    document.getElementById('my-name').innerHTML = `Nome: `;
     document.getElementById('my-age').innerHTML = `età: `;
     document.getElementById('my-ticket-price').innerHTML = `prezzo biglietto: `;
     document.getElementById('output').classList.add('d-none');
